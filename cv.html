@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carla Muriel - Curriculum Vitae</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+    <!-- ===================================================================
+         BARRA SUPERIOR DE HERRAMIENTAS / ACTIVIDADES
+         =================================================================== -->
+    <div class="top-bar">
+        <button id="btn-tema" class="btn">Cambia Tema</button>
+        <button id="btn-rastreador" class="btn">Clics para registrar tu visita (Conteo: 0)</button>
+    </div>
+ 
+    <!-- ===================================================================
+         HEADER / DATOS PERSONALES
+         =================================================================== -->
+    <header>
+        <div class="avatar-container">
+            <div id="avatar" class="avatar-box" title="Pasa el mouse por encima">
+                CJMU
+            </div>
+        </div>
+ 
+        <h1>Carla Jeannett Muriel Ustariz</h1>
+        <p class="job-title">Ingeniero en Sistemas</p>
+ 
+        <ul class="contact-list">
+            <li>La Paz, Bolivia</li>
+            <li>(+591) 70146589</li>
+            <li><a href="mailto:carlimus@hotmail.com">carlimus@hotmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/carlimus" target="_blank" rel="noopener">linkedin.com/in/carlimus</a></li>
+            <li><a href="https://github.com/carlimus" target="_blank" rel="noopener">github.com/carlimus</a></li>
+        </ul>
+ 
+        <div style="margin-top: 1rem;">
+            <button id="btn-contacto" class="btn btn-primary">Contacto</button>
+            <p id="mensaje-contacto" class="feedback-msg hidden"></p>
+        </div>
+    </header>
+ 
+    <main>
+        <!-- ===============================================================
+             SECCION 1: DEMOSTRACION DE LA PILA DE EJECUCION (CALL STACK)
+             =============================================================== -->
+        <section class="card-section">
+            <h2>Sobre mí</h2>
+            <p class="section-desc">
+                Muestra el Perfil Profesional 
+            </p>
+            <div class="actions-row">
+                <button id="btn-callstack" class="btn">About me</button>
+                <button id="btn-clear-terminal" class="btn btn-secondary">Limpiar Terminal</button>
+            </div>
+            <pre id="terminal-callstack" class="code-terminal">Presiona el botón para obtener información...</pre>
+        </section>
+ 
+        <!-- ===============================================================
+             SECCION 2: HABILIDADES TECNICAS
+             =============================================================== -->
+        <section id="professional-summary" class="card-section">
+            <h2>Desarrollo Oracle y Líder de Proyectos</h2>
+            <ul id="skills-list" class="skills-grid">
+                <li><strong>Desarrollo:</strong> ORACLE</li>
+                <li><strong>Manejo de Bases de Datos:</strong> PostgreSQL, MySQL, Oracle</li>
+                <li><strong>Otros:</strong> Liderazgo de proyectos y equipos multidisciplinarios</li>
+            </ul>
+        </section>
+ 
+        <!-- ===============================================================
+             SECCION 3: PROYECTOS, ASINCRONIA, FILTER Y EVENT DELEGATION
+             =============================================================== -->
+        <section class="card-section">
+            <h2>Portafolio de Proyectos</h2>
+             
+            <div class="filters-row">
+                <span class="label">Filtrar por área:</span>
+                <button class="btn btn-filter" data-filtro="Todos">Todos</button>
+                <button class="btn btn-filter" data-filtro="Desarrollo">Desarrollo</button>
+                <button class="btn btn-filter" data-filtro="Database">Bases de Datos</button>
+                <button class="btn btn-filter" data-filtro="Gestion">Gestion</button>
+            </div>
+ 
+            <div class="actions-row" style="margin-top: 0.75rem;">
+                <button id="btn-cargar-exito" class="btn btn-accent">Cargar Datos Validos (Fetch)</button>
+                <button id="btn-cargar-error" class="btn btn-danger">Simular Error 404 (Throw Error)</button>
+            </div>
+ 
+            <div id="resumen-metrica" class="metric-badge">Cargando métricas...</div>
+ 
+            <div id="contenedor-proyectos" class="projects-grid">
+                <!-- Se inyecta dinámicamente desde script.js -->
+            </div>
+ 
+            <div id="detalle-seleccion" class="info-alert hidden"></div>
+        </section>
+ 
+        <!-- ===============================================================
+             SECCION 4: EXPERIENCIA LABORAL
+             =============================================================== -->
+        <section class="card-section">
+            <h2>Experiencia Laboral</h2>
+            <ul class="experience-list">
+                <li>
+                    <strong>BDO</strong> (11.2024 - Presente)<br>
+                    <span>Encargada del Departamento de Sistemas.</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
